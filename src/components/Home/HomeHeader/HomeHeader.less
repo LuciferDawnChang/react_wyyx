@@ -1,0 +1,87 @@
+@import "../../../common/less/mixins";
+
+#homeHeader{
+  /*overflow: hidden;*/
+  font-size: 28/@rem;
+  color: #666;
+  height:148/@rem;
+  header{
+    .bottom-border-1px(#d9d9d9);
+    position: fixed;
+    left: 0;
+    top:0;
+    z-index: 3;
+    background-color: rgba(255,255,255,1);
+    width: 750/@rem;
+    height: 148/@rem;
+    box-sizing: border-box;
+    .homeHeaderTop{
+      display: flex;
+      justify-content:center;
+      align-items:Center;
+      padding: 16/@rem 30/@rem;
+      .logo{
+        display: block;
+        width:138/@rem;
+        height:40/@rem;
+        margin-right: 20/@rem;
+        background: url(./images/logo.png) no-repeat;
+        background-size: cover;
+      }
+      .search{
+        display: flex;
+        justify-content:center;
+        align-items:Center;
+        width: 532/@rem;
+        height: 56/@rem;
+        background-color: #ededed;
+        border-radius: 10/@rem;
+        font-size: 28/@rem;
+        i{
+          display: inline-block;
+          vertical-align: middle;
+          margin-right:10/@rem;
+          width: 28/@rem;
+          height:28/@rem;
+          background: url("./images/search.png") no-repeat;
+          -webkit-background-size: 100%;
+          background-size: 100%;
+        }
+        span{
+          font-size: 27/@rem;
+        }
+      }
+    }
+    .homeHeaderNav{
+      display: flex;
+      flex-wrap: nowrap;
+      align-items:Center;
+      height: 60/@rem;
+      color: #333;
+      padding: 0 17/@rem;
+      ul{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items:Center;
+        padding: 0 15/@rem;
+        height:60/@rem;
+        li{
+          white-space: nowrap;
+          line-height: 60/@rem;
+          font-size: 27/@rem;
+          text-align: center;
+          padding: 0 17/@rem;
+          margin-left: 48/@rem;
+          height: 60/@rem;
+          &:nth-child(1){
+            margin-left:0;
+          }
+          &.on{
+            color: #b4282d;
+            border-bottom:2/@rem solid #b4282d;;
+          }
+        }
+      }
+    }
+  }
+}

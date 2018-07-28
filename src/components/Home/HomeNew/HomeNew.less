@@ -1,0 +1,119 @@
+@import "../../../common/less/mixins";
+.HomeNew{
+  background-color: #fff;
+  width: 750/@rem;
+  margin-bottom:20/@rem;
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:url("./images/newProduct/bg.png");
+    background-size:10rem 260/@rem;
+    width: 750/@rem;
+    height: 260/@rem;
+    margin-bottom:32/@rem;
+    .HomeNewheader{
+      display: block;
+      color: #8BA0B6;
+      text-align: center;
+      h4{
+        font-size: 36/@rem;
+        color: #8BA0B6;
+      }
+      span{
+        display: block;
+        width: 240/@rem;
+        height: 56/@rem;
+        line-height: 56/@rem;
+        background:#D8E5F1;
+        margin-top: 16/@rem;
+        i{
+          background:url("./images/newProduct/right.png") no-repeat;
+          margin-top:16/@rem;
+          background-size:10/@rem 22/@rem;
+          display:inline-block;
+          height:22/@rem;
+          width:10/@rem;
+          margin-left:6/@rem;
+        }
+
+      }
+    }
+  }
+  .hitsContent{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items:Center;
+    width: 750/@rem;
+    height: 480/@rem;
+    overflow: hidden;
+    .contentList{
+      padding: 0 15/@rem;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items:Center;
+      white-space: nowrap;
+      //width:2490/@rem;
+      .item{
+        vertical-align: middle;
+        white-space: nowrap;
+        width:280/@rem;
+        height:480/@rem;
+        margin: 0 15/@rem;
+        a{
+          .goods{
+            width: 280/@rem;
+            height: 280/@rem;
+            background-color: #F4F4F4;
+            img{
+              width: 100%;
+            }
+          }
+          .info{
+            div{
+              .status{
+                margin-left:12/@rem;
+                padding: 5/@rem 16/@rem;
+                font-size: 20/@rem;
+                height: 16/@rem;
+                line-height: 14/@rem;
+                text-align: center;
+                color: #fff;
+                background-color: #f48f18;
+                border-radius: 2/@rem;
+                display: inline-block;
+                vertical-align: middle;
+              }
+            }
+            p{
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              text-align: left;
+
+
+              &.goodsName{
+                font-size:28/@rem;
+                line-height: 34/@rem;
+                color: #333;
+                padding: 10/@rem;
+              }
+              &.goodsInfo{
+                font-size:24/@rem;
+                line-height: 30/@rem;
+                color: #7f7f7f;
+                padding:0 10/@rem 14/@rem;
+              }
+              &.goodsMoney{
+                padding: 0 10/@rem;
+                color: #b4282d;
+                line-height: 1;
+                font-style: 28/@rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

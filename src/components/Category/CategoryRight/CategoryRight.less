@@ -1,0 +1,37 @@
+@import "../../../common/less/mixins";
+
+.rightItemsListItemWrap{
+  width: 100%;
+  .clearFix();
+  .top20{
+    height: 20/@rem;
+    width: 100%;
+
+  }
+  .rightItemsList{
+
+    width:100%;
+    .rightItemsListTopImg{
+      width: 100%;
+      .clearFix();
+      img{
+        width: 100%;
+        font-size: 0;
+      }
+    }
+    .rightItemsListItem{
+      width: 33%;
+      float: left;
+      font-size: 0;
+      img{
+        width: 100%;
+      }
+      p{
+        text-align: center;
+        font-size: 24/@rem;
+        color: #7f7f7f;
+        line-height: 1;
+      }
+    }
+  }
+}
